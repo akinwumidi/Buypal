@@ -15,9 +15,12 @@
   "type": "module",
   "main": "api/src/index.js",
   "scripts": {
-    "build":"npm install --prefix api && npm install --prefix admin-webapp && npm run build --prefix admin-webapp",
-    "start":"npm run start --prefix api",
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "dev": "concurrently \"npm run dev --prefix api\" \"npm run dev --prefix admin-webapp\"",
+    "build": "npm install --prefix api && npm install --prefix admin-webapp && npm run build --prefix admin-webapp",
+    "start": "npm run start --prefix api"
   },
-  "engines":"node>=20.0"
+  "engines": "node>=20.0",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
 }
