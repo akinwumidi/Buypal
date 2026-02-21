@@ -1,0 +1,23 @@
+{
+  "name": "buypal",
+  "version": "1.0.0",
+  "description": "A full stack E-commerce Mobile App with web Admin Dashboard built with React native",
+  "homepage": "https://github.com/akinwumidi/Buypal#readme",
+  "bugs": {
+    "url": "https://github.com/akinwumidi/Buypal/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akinwumidi/Buypal.git"
+  },
+  "license": "ISC",
+  "author": "israel akinwumi",
+  "type": "module",
+  "main": "api/src/index.js",
+  "scripts": {
+    "build":"npm install --prefix api && npm install --prefix admin-webapp && npm run build --prefix admin-webapp",
+    "start":"npm run start --prefix api",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engine":"node>20.0"
+}
