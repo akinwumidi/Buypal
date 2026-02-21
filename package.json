@@ -15,12 +15,8 @@
   "type": "module",
   "main": "api/src/index.js",
   "scripts": {
-   "dev": "concurrently \"npm run dev --prefix api\" \"npm run dev --prefix admin-webapp\"",
     "build": "npm install --prefix api && npm install --prefix admin-webapp && npm run build --prefix admin-webapp",
     "start": "npm run start --prefix api"
   },
-  "engines": "node>=20.0",
-  "devDependencies": {
-    "concurrently": "^9.2.1"
-  }
+  "engines": "node>=20.0"
 }
