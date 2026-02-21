@@ -15,7 +15,7 @@ if(ENV.NODE_ENV === "production"){
     app.use(express.static(path.join(__dirname, "../admin-webapp/dist")))
 
     app.get("/{*any}",(req,res)=>{
-        res.sendFile(__dirname, "../admin", "dist", "index.html")
+        res.sendFile(__dirname, "../admin-webapp", "dist", "index.html")
     });
 }
 app.listen(3000,() => console.log("Server is up and running"));
